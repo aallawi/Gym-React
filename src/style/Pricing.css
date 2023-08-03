@@ -1,0 +1,78 @@
+.pricing {
+    margin: 0 auto;
+}
+
+.pricing_boxs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.pricing_boxs .pricing_box {
+    width: 30%;
+    text-align: center;
+    min-width: 280px;
+    box-shadow: 0 26px 58px 0 rgba(0, 0, 0, .22), 0 5px 14px 0 rgba(0, 0, 0, .18);
+}
+
+
+.pricing_boxs .pricing_box .pricing_title {
+    padding: 2rem 1rem;
+    border-bottom: solid 1px var(--primary-color);
+}
+.pricing_boxs .pricing_box .pricing_title h2{
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: var(--main-color);
+}
+.pricing_boxs .pricing_box .pricing_title h4{
+    font-size: 18px;
+    color: var(--main-color);
+
+}
+.pricing_boxs .pricing_box .pricing_title h4 span{
+    font-size: 14px;
+    color: #777;
+}
+
+.pricing_boxs .pricing_box .pricing_content {
+    padding: 2rem 1rem;
+    text-align: start;
+}
+.pricing_boxs .pricing_box .pricing_content li {
+    margin: 1.5rem 0;
+    display: flex;
+}
+.pricing_boxs .pricing_box .pricing_content li span {
+    padding-right: 8px;
+}
+.pricing_boxs .pricing_box .pricing_content .register {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.pricing_top {
+    margin-bottom: 1rem;
+}
+.pricing_top .pricing_title {
+    background-color: var(--primary-color);
+}
+.pricing_top .pricing_content span:first-child {
+    color: var(--primary-color);
+}
+
+
+
+@media screen and (max-width :640px) {
+    .pricing_boxs .pricing_box {
+        min-width: 100%;
+    }
+    .pricing_boxs .pricing_box .pricing_content {
+        padding: 1rem;
+    }
+    .pricing_boxs .pricing_box .pricing_content .register {
+        margin-bottom: 1rem;
+    }
+}

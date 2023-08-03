@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700&family=Expletus+Sans:ital,wght@0,500;0,600;0,700;1,400&family=Galdeano&family=Hind+Siliguri:wght@300;500;600;700&family=PT+Sans+Caption:wght@400;700&family=REM:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Work+Sans:wght@100;200;300;400;500;600;700;800&display=swap');
+
+:root {
+  --main-color: #155263;
+  --primary-color: #ff9a3c;
+  --heading-color: #ff6f3c;
+  --font-family : 'Barlow', sans-serif
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family) ;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 50px 0;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+a:hover {
+  color: unset;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ============================================== */
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+li {
+  list-style: none;
+}
+
+.section_title {
+  color: var(--heading-color);
+  font-weight: 700;
+}
+
+/* {========================  logo  ========================} */
+ .header__logo {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  height: 100%;
+  cursor: pointer;
+}
+
+.header__logo .logo {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.header__logo .logo img {
+  max-height: 65%;
+}
+.header__logo h1{
+  font-size: 22px;
+  color: var(--primary-color);
+}
+.header__logo:hover  h1{
+  color: var(--heading-color);
+}
+
+
+/* {========================  button register  ========================} */
+.register {
+  cursor: pointer;
+}
+.register a.register {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+.register a.register:hover {
+  background-color: var(--heading-color);
+}
+
+@media screen and (max-width : 450px ) {
+  .register a {
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 600;
+  }
+}
